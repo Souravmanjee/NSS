@@ -15,9 +15,35 @@ const Career = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert("Application submitted! We'll get back to you soon.");
+
+    try {
+      const response = await fetch("https://formspree.io/f/xjkrlvdn", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(form)
+      });
+
+      if (response.ok) {
+        alert("Application submitted! We'll get back to you soon.");
+        setForm({
+          firstName: "",
+          lastName: "",
+          phone: "",
+          position: "",
+          email: "",
+          comment: ""
+        });
+      } else {
+        alert("There was an error submitting the form. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Submission failed. Please check your connection or try again later.");
+    }
   };
 
   return (

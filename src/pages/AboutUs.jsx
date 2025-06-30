@@ -44,13 +44,13 @@ const AboutUs = () => {
           {[
             {
               src: nandimg,
-              alt: "Owner Nand Kishore Mishra",
-              name: "Nand Kishore Mishra",
+              alt: "Owner Nand Kishor Mishra",
+              name: "Nand Kishor Mishra",
               email: "Founder"
             },
             {
               src: "src.jpg",
-              alt: "Founder Sonu Kumar",
+              alt: "Co-Founder Sonu Kumar",
               name: "Sonu Kumar",
               email: "Co-Founder"
             },
