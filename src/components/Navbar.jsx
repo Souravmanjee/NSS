@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,28 +8,27 @@ const Navbar = () => {
 
   return (
     <div className="bg-[#0b3f3d] px-4 py-2">
-      <nav className="bg-white shadow-md px-4 md:px-8 py-3 z-50 relative rounded-full">
-        <div className="flex justify-between items-center">
+      <nav className="bg-white shadow-md px-4 md:px-8 z-50 relative h-20 rounded-full flex items-center overflow-hidden">
+        <div className="flex justify-between items-center w-full">
           {/* Logo Section */}
           <div className="flex items-center space-x-3">
             <img
-              src="src/assets/image/WESTAR~1.PNG"
+              src="src/assets/Logo.png"
               alt="Company Logo"
-              className="h-12 w-auto"
+              className="h-16 w-auto flex-shrink-0"
             />
-            <div className="text-left leading-none">
-              <h1 className="text-xl font-bold text-[#0b3f3d]">NSS</h1>
-              <h2 className="text-xl font-bold text-[#0b3f3d]">Edge Consulting</h2>
-            </div>
+            <h1 className="text-xl font-bold text-[#0b3f3d] whitespace-nowrap">
+              NSS Edge Consulting
+            </h1>
           </div>
 
           {/* Desktop Navigation */}
           <ul className="hidden md:flex space-x-6 text-[#1b2966] font-medium">
-            <li className="cursor-pointer hover:text-green-400"><a href="/">Home</a></li>
-            <li className="cursor-pointer hover:text-green-400"><a href="/AboutUs">About</a></li>
-            <li className="cursor-pointer hover:text-green-400"><a href="/Servicespage">Services</a></li>
-            <li className="cursor-pointer hover:text-green-400"><a href="/Careerpage">Career</a></li>
-            <li className="cursor-pointer hover:text-green-400"><a href="/Contactpage">Contact Us</a></li>
+            <li><Link to="/" className="block hover:text-green-400 hover:font-bold">Home</Link></li>
+            <li><Link to="/AboutUs" className="block hover:text-green-400 hover:font-bold">About</Link></li>
+            <li><Link to="/Servicespage" className="block hover:text-green-400 hover:font-bold">Services</Link></li>
+            <li><Link to="/Careerpage" className="block hover:text-green-400 hover:font-bold">Career</Link></li>
+            <li><Link to="/Contactpage" className="block hover:text-green-400 hover:font-bold">Contact Us</Link></li>
           </ul>
 
           {/* Mobile Menu Toggle */}
@@ -41,13 +41,13 @@ const Navbar = () => {
 
         {/* Mobile Dropdown */}
         {isOpen && (
-          <div className="md:hidden mt-4 space-y-2 text-[#1b2966] font-medium">
+          <div className="md:hidden absolute top-full left-0 w-full bg-white py-4 px-6 shadow-lg text-[#1b2966] font-medium z-50">
             <div className="flex flex-col space-y-3">
-              <a href="/" className="cursor-pointer hover:text-green-400">Home</a>
-              <a href="/AboutUs" className="cursor-pointer hover:text-green-400">About</a>
-              <a href="/Servicespage" className="cursor-pointer hover:text-green-400">Services</a>
-              <a href="/Careerpage" className="cursor-pointer hover:text-green-400">Career</a>
-              <a href="/Contactpage" className="cursor-pointer hover:text-green-400">Contact Us</a>
+              <Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-green-400 hover:font-bold">Home</Link>
+              <Link to="/AboutUs" onClick={() => setIsOpen(false)} className="block hover:text-green-400 hover:font-bold">About</Link>
+              <Link to="/Servicespage" onClick={() => setIsOpen(false)} className="block hover:text-green-400 hover:font-bold">Services</Link>
+              <Link to="/Careerpage" onClick={() => setIsOpen(false)} className="block hover:text-green-400 hover:font-bold">Career</Link>
+              <Link to="/Contactpage" onClick={() => setIsOpen(false)} className="block hover:text-green-400 hover:font-bold">Contact Us</Link>
             </div>
           </div>
         )}

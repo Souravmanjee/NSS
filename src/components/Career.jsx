@@ -165,7 +165,7 @@ const Career = () => {
           whileInView={{ opacity: 1, y: 0 }}
         >
           <p>📧 <span>info@nssedgeconsulting.com</span></p>
-          <p>📞 <span>+91 98445 16626</span></p>
+          <p>📞 <span>+91 9214555851</span></p>
         </motion.div>
       </div>
     </section>

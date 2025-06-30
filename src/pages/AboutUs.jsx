@@ -40,22 +40,22 @@ const AboutUs = () => {
         >
           {[
             {
-              src: "src.jpg",
+              src: "src/assets/image/Nandkishoremishra.jpg",
               alt: "Owner Nand Kishore Mishra",
               name: "Nand Kishore Mishra",
-              email: "nandkishore@nssedge.com"
+              email: "Founder"
             },
             {
               src: "src.jpg",
               alt: "Founder Sonu Kumar",
               name: "Sonu Kumar",
-              email: "sonu.kumar@nssedge.com"
+              email: "Co-Founder"
             },
             {
-              src: "src.jpg",
+              src: "src/assets/image/Bhaiya.jpg",
               alt: "CEO Suman Kumar",
               name: "Suman Kumar",
-              email: "suman.kumar@nssedge.com"
+              email: "CEO"
             },
           ].map((person, index) => (
             <div key={index} className="flex flex-col items-center mb-6">
