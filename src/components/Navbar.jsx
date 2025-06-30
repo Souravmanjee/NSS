@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
+import Logonav from '../assets/Logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
           {/* Logo Section */}
           <div className="flex items-center space-x-3">
             <img
-              src="src/assets/Logo.png"
+              src={Logonav}
               alt="Company Logo"
               className="h-16 w-auto flex-shrink-0"
             />

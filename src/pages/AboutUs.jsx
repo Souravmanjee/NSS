@@ -1,5 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Bhaiimg from '../assets/bhai.jpeg';
+import nandimg from '../assets/Nandkishoremishra.jpg';
+
 
 const AboutUs = () => {
   return (
@@ -40,7 +43,7 @@ const AboutUs = () => {
         >
           {[
             {
-              src: "src/assets/image/Nandkishoremishra.jpg",
+              src: nandimg,
               alt: "Owner Nand Kishore Mishra",
               name: "Nand Kishore Mishra",
               email: "Founder"
@@ -52,7 +55,7 @@ const AboutUs = () => {
               email: "Co-Founder"
             },
             {
-              src: "src/assets/image/Bhaiya.jpg",
+              src: Bhaiimg,
               alt: "CEO Suman Kumar",
               name: "Suman Kumar",
               email: "CEO"

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FaPlay } from "react-icons/fa";
 import { Link } from "react-router-dom"; // ✅ Import Link
+import Heroimg from '../assets/Heropic.jpg';
 
 export default function Hero() {
   return (
@@ -83,7 +84,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <img
-            src="src/assets/image/2f3a4c20-355f-4f9e-8313-cfd10785e2ed.jpg"
+            src={Heroimg}
             alt="Digital Innovation"
             className="rounded-2xl shadow-lg w-full max-w-md mx-auto"
           />

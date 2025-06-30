@@ -1,6 +1,7 @@
 import { FaCheck } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom"; 
+import Aboutimg from '../assets/Abbout.jpg';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -34,7 +35,7 @@ export default function About() {
           className="lg:w-1/2 relative rounded-2xl overflow-hidden shadow-xl"
         >
           <img
-            src="src/assets/image/14d554ff-0a49-4376-b954-a95d202f8f6d.jpg"
+            src={Aboutimg}
             alt="NSS Edge Consultancy Team"
             className="w-full h-full object-cover rounded-l-[150px]"
           />

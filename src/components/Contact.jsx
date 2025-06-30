@@ -134,7 +134,7 @@ export default function Contact() {
       <div className="mt-20 w-full h-[400px]">
         <iframe
           title="Google Map"
-          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4629929.228975986!2d83.5782757335906!3d23.601692102806243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdhanbad%20delhi%20public%20school!5e1!3m2!1sen!2sin!4v1751226753996!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7182.12104568387!2d81.72761244308977!3d25.83455090922451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sIndrawat%20Derwa%2CSarayindrawat%2Cprataparh%20230128%20UP!5e0!3m2!1sen!2sin!4v1751306825654!5m2!1sen!2sin"
           className="w-full h-full border-none"
           loading="lazy"
         ></iframe>
