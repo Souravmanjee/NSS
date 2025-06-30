@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Bhaiimg from '../assets/bhai.jpeg';
 import nandimg from '../assets/Nandkishoremishra.jpg';
+import sonuimg from '../assets/Sonuk.jpg';
 
 
 const AboutUs = () => {
@@ -49,7 +50,7 @@ const AboutUs = () => {
               email: "Founder"
             },
             {
-              src: "src.jpg",
+              src: sonuimg,
               alt: "Co-Founder Sonu Kumar",
               name: "Sonu Kumar",
               email: "Co-Founder"
